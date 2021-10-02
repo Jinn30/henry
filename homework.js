@@ -171,25 +171,30 @@ function redondearNumero(num) {    //Esta es una forma de redondear un decimal.
 }
 
 //TAMBIEN SE PUEDE USAR LA EXPRESION MATH.ROUND QUE ES BASCICAMENTE LO MISMO DE ARRIBA
+console.log ("Coloque 'redondearNumeroConMath()' para ejecutar la funcion y asigne un valor entre()")
 function redondearNumeroConMath (num) {
     console.log ("El numero", (num), "redondeado es:",)
     return Math.round(num) //Solamente se usa esta expresion que redondea cualquier numero decimal.
 }
 
 //REDONDEAR HACIA ARRIBA
+console.log ("Coloque 'redondearHaciaArriba()' para ejecutar la funcion y asigne un valor entre()")
 function redondearHaciaArriba(num) {
     console.log ("El numero", num,"redondeado hacia arriba es:",);
     return Math.ceil(num);
 }
 
  
-//NUMERO RAMDOM
+//NUMERO RANDOM
+console.log ("Coloque 'numeroRandom()' para ejecutar la funcion y asigne los valores entre()")
 function numeroRandom (min, max){
+    console.log ("Numero aleatorio del",min ,"al",max, "es:",);
     return Math.floor (Math.random () * (max - min)) + min;
 }
-console.log ("Numero aleatorio del 1 al 100 es:", numeroRandom);
+
 
 //SI UN NUMERO ES POSITIVO O NEGATIVO
+console.log ("Coloque 'esPositivo()' para ejecutar la funcion y asigne un valor entre()")
 function esPositivo (numero) {
     if (numero === 0) {
         return false;
@@ -203,49 +208,58 @@ else {
 }
 
 // AGREGAR SIMBOLO DE EXCLAMACIÓN
+console.log ("Coloque 'agregarSimbolodeExclamacion()' para ejecutar la funcion y asigne un valor entre()")
 function agregarSimbolodeExclamacion (str) {
     var str = "Hola mundo"
     return str + '!'
 }
 
 //COMBINAR PALABRAS
-function combinarnombres (nombre, apellido) {
-    var combinado = "Soy " + nombre + ' ' + apellido;
+console.log ("Coloque 'combinarNombre()' para ejecutar la funcion y asigne los valores entre()")
+function combinarNombres (nombre, apellido) {
+    var combinado = "Soy " + nombre + " " + apellido;
     return combinado;
 }
 
 //OBTENER SALUDO
+console.log ("Coloque 'obtenerSaludo()' para ejecutar la funcion y asigne un valor entre()")
 function obtenerSaludo (nombre) {
     return 'hola ' + nombre + '!';
 }
 //AREA RECTANGULO
+console.log ("Coloque 'obtenerAreaRectangulo()' para ejecutar la funcion y asigne los valores entre()")
 function obtenerAreaRectangulo (base, altura) {
     var area = base * altura
+    console.log ("El area de rectangulo es: ",)
     return area;
 } 
-console.log ("El area de rectangulo es: ", area)
 
 //PERIMETRO DEL CUADRADO
+console.log ("Coloque 'retornarPerimetro()' para ejecutar la funcion y asigne un valor entre()")
 function retornarPerimetro (lado) {
+    console.log ("El perimetro del cuadrado es: ")
     return lado * 4
 }
-console.log ("El perimetro del cuadrado es: ", lado)
 
 //AREA DEL TRIANGULO
+console.log ("Coloque 'areaDelTriangulo()' para ejecutar la funcion y asigne los valores entre()")
 function areaDelTriangulo (base, altura) {
     var area = (base * altura) / 2
+    console.log ("El area del triangulo es de:")
     return area
 }
-console.log ("El area del triangulo es de:", area)
 
 //CONVERSION DE EURO A DOLAR
+console.log ("Coloque 'deEuroAdolar()' para ejecutar la funcion y asigne un valor entre()")
 function deEuroAdolar (euro) {
     var conversion = euro * 1.15
-    return conversion
+    console.log ("De", euro , "euros son")
+    return conversion + ' dolares'
 }
-console.log ("De, ", euros , "son" , conversion , "dolares")
+
 
 //DETERMINAR UN VOCAL
+console.log ("Coloque 'esVocal()' para ejecutar la funcion y asigne un valor entre()")
 function esVocal (letra) {
     if(letra.length > 1){
         return "Dato incorrecto"
